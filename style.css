@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family:'Roboto', sans-serif;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------------Global------------------------------------------*/
+.container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+button{
+    border: none;
+    color: white;
+}
+p{
+    letter-spacing:1.2px;
+    line-height: 1.5;
+}
+
+/*---------------------------------header-----------------------------------------*/
+header{
+    background-color: #373637;
+    height: 80px;
+    color: white;
+}
+header #branding{
+    font-size: 25px;
+}
+header nav .nav-item{
+    display: inline;
+    font-size: 12px;
+    padding-left: 30px;
+}
+header .flex-cont{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+/*----------------------Showcase------------------------------*/
+#showcase{
+    color: black;
+    text-align: center;
+    
+    padding: 19% 150px 9% 150px;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)) ,url('intro-bg.jpg');
+    
+    background-size: cover;
+    color: white ;
+    
+}
+
+#showcase h1{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+   
+
+}
+#showcase p{
+    margin: 30px 0 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.showcase-cont{
+    z-index: 1;
+}
+#showcase button{
+    padding: 10px 15px;
+    background-color: #69ac30;
+}
+/*---------------------Welcome section------------------*/
+#welcome{
+    background-color: #f6f6f6;
+}
+#welcome p{
+    color: #989da2;
+    line-height: 1.5;
+    font-size: 13px;
+}
+#welcome .left{
+   
+    width: 50%;
+    
+}
+#welcome .heading{
+    font-size: 27px;
+    font-weight: 450;
+    color: #2e2f2b;
+}
+#welcome .heading span{
+    color: #6faa52;
+}
+
+#welcome .container{
+    padding: 100px 0;
+    display: flex;
+
+}
+#welcome #under-dash{
+    width: 50px;
+    height: 3px;
+    background-color: #6faa52;
+    margin: 15px 0 25px;
+}
+#welcome #view-services{
+    padding: 13px 18px;
+    background-color:  #69ac30;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+#welcome #right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#welcome #right img{
+    width: 100%;
+    height: 100%;
+}
+#welcome #right .title{
+    font-size: 19px;
+    color: #2e2f2b;
+    font-weight: 450;
+    margin: 15px 0 20px;
+}
+#welcome #right .col1,#welcome #right .col2{
+    width: 40%;
+}
+
+/*--------------------------Services-------------------------*/
+#services{
+    background-color:#69ac30 ;
+}
+#services .container{
+    padding: 80px 50px 100px;
+    text-align: center;
+}
+#services .heading{
+    font-size: 30px;
+    color: white;
+}
+#services hr{
+    width: 55px;
+    height: 3px;
+    border: none;
+    background-color: #c2deac;
+    margin: 15px auto;
+}
+#services p{
+    color: rgb(243, 241, 241);
+    font-size: 13px;
+    letter-spacing:1.5px;
+}
+#services .flex-cont{
+    display: flex;
+    justify-content: space-between;
+
+}
+#services .flex-cont .heading{
+    font-size: 20px;
+    font-weight:100;
+    margin-bottom: 10px;
+}
+#services .flex-cont p{
+    font-size: 12px;
+}
+#services img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #79b547;
+}
+#services .col{
+    text-align: center;
+    padding: 0 10px;
+    
+}
+#services .col .img-cont{
+    width: 150px;
+    height: 150px;
+    margin: 50px auto 30px;
+
+}
+/*----------------------------Gallery------------------*/
+#gallery{
+    background-color:#f6f6f6 ;
+}
+#gallery .container{
+    padding: 80px 0 100px;
+    text-align: center;
+
+}
+#gallery .heading{
+    font-size: 30px;
+    color: #2e2f2b;
+}
+#gallery p{
+    
+}
+#gallery hr{
+    width: 55px;
+    height: 3px;
+    border: none;
+    background-color: #67a236;
+    margin: 15px auto;
+}
+#gallery p{
+    color: #4d583b;
+    font-size: 13px;
+    letter-spacing:1.5px;
+}
+#gallery .tab{
+    display: inline-block;
+    margin: 40px 10px 20px;
+    padding: 10px 15px;
+    color: #4d583b   ;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+}
+#gallery #selected{
+
+    background-color: #69ac30;
+    color: #f6f6f6;
+}
